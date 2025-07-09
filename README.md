@@ -1,6 +1,6 @@
-# 📚 Proyecto Módulo 2 – Equipo 1
+# 📚 Creador de tarjetas literarias
 
-Este es el proyecto final del **Módulo 2** del Bootcamp de Adalab, desarrollado por el **Equipo 1 de la Promoción 51**. Es una aplicación web donde puedes crear y compartir recomendaciones literarias de forma visual, rápida y sencilla.
+Es una aplicación web donde puedes crear y compartir recomendaciones literarias de forma visual, rápida y sencilla.
 
 ## 🚀 Despliegue
 
