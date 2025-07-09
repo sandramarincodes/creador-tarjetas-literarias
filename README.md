@@ -1,6 +1,6 @@
 # 📚 Creador de tarjetas literarias
 
-Es una aplicación web donde puedes crear y compartir recomendaciones literarias de forma visual, rápida y sencilla.
+Es una aplicación web donde puedes crear y compartir recomendaciones literarias de forma visual, rápida y sencilla. Versión propia con mejoras UX a partir de proyecto grupal.
 
 ## 🚀 Despliegue
 
