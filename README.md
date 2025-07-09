@@ -5,7 +5,7 @@ Es una aplicación web donde puedes crear y compartir recomendaciones literarias
 ## 🚀 Despliegue
 
 Puedes ver el proyecto publicado en GitHub Pages aquí:  
-🔗 [https://maqui5293.github.io/project-promo-51-module-2-team-1/](https://maqui5293.github.io/project-promo-51-module-2-team-1/)
+🔗 [https://sandramarincodes.github.io/creador-tarjetas-literarias/)
 
 ---
 
@@ -14,8 +14,7 @@ Puedes ver el proyecto publicado en GitHub Pages aquí:
 - Rellenar un formulario con los datos de una recomendación literaria.
 - Vista previa automática y en tiempo real de la tarjeta.
 - Generación de una tarjeta final con imagen, estrellas y autor.
-- Compartición a través de URL única.
-- Acceso directo a tarjetas existentes mediante enlaces.
+- Compartir la tarjeta y acceso a la misma a través de una URL con identificador único. 
 
 ---
 
