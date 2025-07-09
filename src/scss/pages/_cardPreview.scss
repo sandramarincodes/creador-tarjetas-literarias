@@ -107,7 +107,8 @@
  
 
 .resetBtn {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   padding: 0.75rem 1.5rem;
   background-color: vars.$color-tertiary;
   color: vars.$color-secondary;
@@ -123,6 +124,9 @@
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   @media (min-width: 1200px) {
+    margin-top: -0.1rem;
+  }
 }
 
 .resetBtn:hover {
