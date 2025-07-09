@@ -5,7 +5,7 @@ Es una aplicación web donde puedes crear y compartir recomendaciones literarias
 ## 🚀 Despliegue
 
 Puedes ver el proyecto publicado en GitHub Pages aquí:  
-🔗 [https://sandramarincodes.github.io/creador-tarjetas-literarias/)
+🔗 https://sandramarincodes.github.io/creador-tarjetas-literarias/
 
 ---
 
