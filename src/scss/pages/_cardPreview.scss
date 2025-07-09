@@ -1,0 +1,168 @@
+@use "../core/variables" as vars;
+
+.cardPreview {
+  font-family: vars.$font-family;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  min-height: 350px;
+  padding: 20px;
+  background-image: url(../images/bg-romance.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+  margin-top: 10px;
+
+  @media (min-width: 768px) {
+    width: 350px;
+    min-height: 500px;
+  }
+  @media (min-width: 1200px) {
+    width: 400px;
+    min-height: 650px;
+   /*  font-size: 1.25rem; */
+  }
+}
+
+
+/* .cardPreview h3 {
+  font-size: 1.1rem;
+  @media (min-width: 1200px) {
+    font-size: 1.5rem;
+  }
+} */
+
+
+.profile__container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.profile__preview {
+  width: 50px;
+  height: 70px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.profile__image {
+  width: 200px;
+  height: 300px;
+  background-image: url("/images/Image_example.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+ 
+}
+
+.action__hiddenField {
+  display: none;
+}
+
+.image__container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.profile__image {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #ddd;
+}
+
+.profile__preview {
+  width: 50px;
+  height: 70px;
+  margin-left: 15px;
+}
+
+
+
+.previewContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+ 
+
+.resetBtn {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: vars.$color-tertiary;
+  color: vars.$color-secondary;
+  border: none;
+  border-radius: 1rem;
+  font-weight: 600;
+  font-family: vars.$font-family;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resetBtn:hover {
+  background-color: vars.$color-secondary;
+  color: vars.$color-bg;
+  transform: scale(1.05);
+}
+
+.previewTitle{
+  font-size: 1.5rem; 
+  font-family: vars.$font-title;
+  font-weight: bold;
+  color: vars.$color-bg;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+  @media (min-width: 1200px) {
+    font-size: 3rem;
+  }
+}
+
+.previewAutor,
+.previewGender{
+  font-size: 0.9rem;   
+  font-weight: bold;
+  color: vars.$color-bg;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+  @media (min-width: 1200px) {
+    font-size: 1.8rem;
+  }
+}
+
+.starRate{
+  font-size: 0.9rem;     
+  margin-bottom: 1.2rem;
+  text-align: center;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+  @media (min-width: 1200px) {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,33 @@
+@use "../core/variables" as vars;
+
+body {
+  padding: 1rem;
+  margin: 0;
+  background-color: vars.$color-bg;
+  font-family: vars.$font-family;
+  background-image: linear-gradient(135deg, #f4f0ff, #eaf4f4);
+
+  @media (min-width: 768px) {
+    padding: 2rem;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 3rem;
+    font-size: 1.15rem;
+  }
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+
+.page__main {
+  flex: 1;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "Montserrat", sans-serif;
+}

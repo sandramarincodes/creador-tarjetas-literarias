@@ -1,0 +1,68 @@
+<section class="form__section-2">
+  <div class="js_toggle">
+    <h2 class="form__section-title" data-label="Rellena">Rellena 📘</h2>
+  </div>
+  <div class="form__section-content">
+    <label for="title" class="js_title title labelstyle">¿Qué libro ha dejado huella en ti?</label>
+    <input
+      type="text"
+      id="title"
+      class="js_inputTitle inputTitle inputstyle"
+      placeholder="Título del libro"
+      required
+    />
+
+    <label for="autor" class="js_autor Autor">¿Quién es la mente creativa?</label>
+    <input
+      type="text"
+      id="autor"
+      class="js_inputAutor inputAutor inputstyle"
+      placeholder="Autor/a"
+      required
+    />
+
+    <label for="gender" class="js_gender gender">¿Qué tono o estilo encierra esta obra?</label>
+    <input
+      type="text"
+      id="gender"
+      class="js_inputGender inputGender inputstyle"
+      placeholder="Género"
+      required
+    />
+    
+<div class="profile__container">
+      <div class="button_image">
+      <label class="action__upload-btn" for="img-selector">¡Sube la portada!</label>
+      <input type="file" name="" id="img-selector" class="action__hiddenField js__profile-upload-btn">
+      <p class="form__error js_imageError"></p>
+    </div>    
+
+     <div class="profile" >
+      <div class="profile__preview js__profile-preview" id="profileImage" style="background-image: url('./images/Image_example.jpg');">        
+      </div>
+     </div>
+    </div>
+            
+    <label for="rate" class="js_rate rate">¿Cuánto te ha encantado? ¡Ponle estrellas!</label>
+    <input
+      type="number"
+      id="rate"
+      class="js_inputRate inputRate inputstyle"
+      placeholder="Valoración del 1 al 5"
+      min="1"
+      max="5"
+      required
+    />
+
+    <label for="user" class="js_userName userName">¿Quién es el experto que recomienda este libro?</label>
+    <input
+      type="text"
+      id="user"
+      class="js_inputUserName inputUserName inputstyle"
+      placeholder="Indica tu nombre o usuario"
+      required
+    />
+  </div>
+</section>
+
+

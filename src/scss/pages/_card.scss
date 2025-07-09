@@ -1,0 +1,90 @@
+@use "../core/variables" as vars;
+
+
+.card__main-container{
+  display: flex;  
+  flex-direction: column;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.backtoHome,
+.share-twitter {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: vars.$font-family;
+  background-color: vars.$color-tertiary;
+  color: vars.$color-secondary;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.backtoHome:hover, .share-twitter:hover {
+  background-color: vars.$color-secondary;
+  color: vars.$color-bg;
+  transform: scale(1.05);
+}
+
+
+.card{
+  display: flex;
+  justify-content: center;  
+  align-items: center;  
+
+}
+
+.card__title{
+  font-size: 1.5rem; 
+  font-family: vars.$font-title;
+  font-weight: bold;
+  color: vars.$color-bg;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+  @media (min-width: 1200px) {
+    font-size: 3rem;
+  }
+}
+
+.card__author,
+.card__gender,
+.card__user{
+  font-size: 0.9rem;   
+  font-weight: bold;
+  color: vars.$color-bg;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+  @media (min-width: 1200px) {
+    font-size: 1.25rem;
+  }
+}
+
+.card__author{
+  text-transform: capitalize;
+}
+
+.card__stars{
+  font-size: 0.9rem;     
+  margin-bottom: 1.5rem;
+  text-align: center;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+  @media (min-width: 1200px) {
+    font-size: 1.8rem;
+  }
+}

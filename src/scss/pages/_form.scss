@@ -1,0 +1,248 @@
+@use "../core/variables" as vars;
+
+.form__main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: center;
+}
+
+/* 💻 En pantallas grandes (web), se muestra en fila */
+@media (min-width: 1200px) {
+  .form__main-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+.form {
+  font-family: vars.$font-family;
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: vars.$color-bg;
+  border-radius: 10px;
+
+  @media (min-width: 1200px) {
+    font-size: 1.25rem;
+    width: 750px;
+    height: 100%;
+    padding: 2rem;
+    max-width: none;
+  }
+}
+
+.form__section-content {
+  display: none;
+  &.is-open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+}
+
+.buttonSubmit {
+  padding: 0.8rem 2rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 1rem;
+  text-decoration: none;
+  font-family: vars.$font-family;
+  background-color: vars.$color-tertiary;
+  color: vars.$color-secondary;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  align-self: center;
+  min-width: unset;
+  transition: all 0.3s ease;
+  max-width: 100%;
+}
+
+.buttonSubmit:hover {
+  background-color: vars.$color-secondary;
+  color: vars.$color-bg;
+  transform: scale(1.05);
+}
+
+h2 {
+  font-family: vars.$font-title;
+  font-size: 1.5rem;
+  @media (min-width: 1200px) {
+    font-size: 2rem;
+  }
+}
+
+.form__section-1,
+.form__section-2,
+.form__section-3 {
+  border: solid vars.$color-tertiary 1px;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.palette-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+label {
+  display: inline-block;
+  text-align: center;
+  font-size: 0.9rem;
+  @media (min-width: 1200px) {
+    font-size: 1.25rem;
+  }
+}
+
+input {
+  @media (min-width: 1200px) {
+    font-size: 1.25rem;
+  }
+}
+
+.bg-preview {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto 0.5rem auto;
+}
+
+.romance-bg-preview {
+  background-image: url("../images/bg-romance.jpg");
+}
+
+.misterio-bg-preview {
+  background-image: url("../images/bg-misterio.jpg");
+}
+
+.cienciaficcion-bg-preview {
+  background-image: url("../images/bg-cienciaficcion.jpg");
+}
+
+.fantasia-bg-preview {
+  background-image: url("../images/bg-fantasia.jpg");
+}
+
+.poesia-bg-preview {
+  background-image: url("../images/bg-poesia.jpg");
+}
+
+//Fondo tarjeta
+
+.cardPreview.romance {
+  background-image: url("../images/bg-romance.jpg");
+}
+
+.cardPreview.misterio {
+  background-image: url("../images/bg-misterio.jpg");
+}
+
+.cardPreview.cienciaficcion {
+  background-image: url("../images/bg-cienciaficcion.jpg");
+}
+
+.cardPreview.fantasia {
+  background-image: url("../images/bg-fantasia.jpg");
+}
+
+.cardPreview.poesia {
+  background-image: url("../images/bg-poesia.jpg");
+}
+
+//Estilo base para la tarjeta
+.cardPreview {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding: 2rem;
+  color: white;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.inputstyle {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgb(245, 237, 237);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.profile__container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.button_image {
+  display: flex;
+  align-items: center;
+  transition: all;
+}
+
+.action__upload-btn {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: vars.$color-tertiary;
+  color: #333;
+  border: none;
+  border-radius: 1rem;
+  font-weight: 600;
+  font-family: vars.$font-family;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  align-self: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.action__upload-btn:hover {
+  background-color: vars.$color-secondary;
+  color: vars.$color-bg;
+  transform: scale(1.05);
+}
+
+.form__error {
+  font-size: 0.9rem;
+  @media (min-width: 1200px) {
+    font-size: 1.25rem;
+  }
+}

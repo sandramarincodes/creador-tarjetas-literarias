@@ -1,0 +1,28 @@
+@use "../core/variables" as vars;
+
+.page__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  font-family: vars.$font-title;
+  
+
+  h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 3rem;
+
+    @media (min-width: 1200px) {
+      font-size: 2,8rem;
+    }
+  }
+}
+
+.page__logo {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}

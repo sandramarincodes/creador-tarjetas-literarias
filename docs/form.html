@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Libreria Virtual</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="./images/favicon.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"      
+      rel="stylesheet"
+    /><link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Great+Vibes&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/main-fb22bd2d.css">
+  </head>
+  <body>
+    <header class="page__header">
+  <img src="./images/logo.png" alt="Mi libro favorito" class="page__logo">
+  <h1>Comparte tu Libro Favorito con el mundo</h1>
+</header>
+    <main class="form__main-container">
+      <form class="js_form form">
+        <section class="form__section-1">
+  <div class="js_toggle">
+    <h2 class="form__section-title" data-label="Diseña" >Diseña 📘</h2>
+  </div>
+  <div class="form__section-content">
+    <fieldset>
+      <div class="palette-options">
+
+        <label class="palette-option">
+          <input type="radio" name="background" value="romance" class="js-fondo-radio" checked />
+          <div class="bg-preview romance-bg-preview"></div>
+          <p>Fondo Romance</p>
+        </label>
+
+        <label class="palette-option">
+          <input type="radio" name="background" value="misterio" class="js-fondo-radio" />
+          <div class="bg-preview misterio-bg-preview"></div>
+          <p>Fondo Misterio</p>
+        </label>
+
+        <label class="palette-option">
+          <input type="radio" name="background" value="cienciaficcion" class="js-fondo-radio" />
+          <div class="bg-preview cienciaficcion-bg-preview"></div>
+          <p>Fondo Ciencia Ficción</p>
+        </label>
+
+        <label class="palette-option">
+          <input type="radio" name="background" value="fantasia" class="js-fondo-radio" />
+          <div class="bg-preview fantasia-bg-preview"></div>
+          <p>Fondo Fantasía</p>
+        </label>
+
+
+        <label class="palette-option">
+          <input type="radio" name="background" value="poesia" class="js-fondo-radio" />
+          <div class="bg-preview poesia-bg-preview"></div>
+          <p>Fondo Poesía</p>
+        </label>
+
+      </div>
+
+    </fieldset>
+  </div>
+</section>
+        <section class="form__section-2">
+  <div class="js_toggle">
+    <h2 class="form__section-title" data-label="Rellena">Rellena 📘</h2>
+  </div>
+  <div class="form__section-content">
+    <label for="title" class="js_title title labelstyle">¿Qué libro ha dejado huella en ti?</label>
+    <input
+      type="text"
+      id="title"
+      class="js_inputTitle inputTitle inputstyle"
+      placeholder="Título del libro"
+      required
+    />
+
+    <label for="autor" class="js_autor Autor">¿Quién es la mente creativa?</label>
+    <input
+      type="text"
+      id="autor"
+      class="js_inputAutor inputAutor inputstyle"
+      placeholder="Autor/a"
+      required
+    />
+
+    <label for="gender" class="js_gender gender">¿Qué tono o estilo encierra esta obra?</label>
+    <input
+      type="text"
+      id="gender"
+      class="js_inputGender inputGender inputstyle"
+      placeholder="Género"
+      required
+    />
+    
+<div class="profile__container">
+      <div class="button_image">
+      <label class="action__upload-btn" for="img-selector">¡Sube la portada!</label>
+      <input type="file" name="" id="img-selector" class="action__hiddenField js__profile-upload-btn">
+      <p class="form__error js_imageError"></p>
+    </div>    
+
+     <div class="profile" >
+      <div class="profile__preview js__profile-preview" id="profileImage" style="background-image: url('./images/Image_example.jpg');">        
+      </div>
+     </div>
+    </div>
+            
+    <label for="rate" class="js_rate rate">¿Cuánto te ha encantado? ¡Ponle estrellas!</label>
+    <input
+      type="number"
+      id="rate"
+      class="js_inputRate inputRate inputstyle"
+      placeholder="Valoración del 1 al 5"
+      min="1"
+      max="5"
+      required
+    />
+
+    <label for="user" class="js_userName userName">¿Quién es el experto que recomienda este libro?</label>
+    <input
+      type="text"
+      id="user"
+      class="js_inputUserName inputUserName inputstyle"
+      placeholder="Indica tu nombre o usuario"
+      required
+    />
+  </div>
+</section>
+
+
+
+        <form class="js_form form">
+  <section class="form__section-3">
+    <div class="js_toggle">
+      <h2 class="form__section-title" data-label="Comparte">Comparte 📘</h2>
+    </div>
+    <div class="form__section-content">
+      <button type="submit" class="buttonSubmit js_buttonSubmit">
+        Crear Tarjeta
+      </button>
+    </div>
+  </section>
+</form>
+      </form>
+      <div class="previewContainer">
+  <button type="button" class="js_resetBtn resetBtn">Resetear tarjeta</button>
+
+  <section class="js_cardPreview cardPreview">
+  <h3 class="js_previewTitle previewTitle">Título del libro</h3>
+  <h3 class="js_previewAutor previewAutor">Autor/a</h3>
+  <h3 class="js_previewGender previewGender">Género</h3>
+  <h3 class="js_previewRate starRate">⭐⭐⭐⭐⭐</h3>
+  <div class="js__profile-image profile__image"></div>
+  <h3 class="js_previewUserName previewUserName">Nombre o Usuario</h3>
+  </section>
+</div>
+
+
+
+    </main>
+
+    <footer class="page__footer">
+  <p>&copy; DivSoul</p>
+  <img src="./images/DivSoul.png" alt="Team DivSoul Logo" class="footer__logo" />
+</footer>
+
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
